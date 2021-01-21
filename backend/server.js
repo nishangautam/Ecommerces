@@ -6,5 +6,5 @@ const app=express();
 app.get("/api/products",(req,res)=>{
     res.send(data.products);
 });
-app.listen(5000,() => {consile.log("server started at https://localhost:5000")});
-// npm install @bebel/core @babel/node @babel/present-env nodemon --save-dev
+app.listen(5000,() => {console.log("server started at https://localhost:5000")});
+// install babel 
