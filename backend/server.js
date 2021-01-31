@@ -3,8 +3,16 @@ import data from './data';
 
 const app=express();
 
+app.get("/api/products/:id",(req,res)=>{
+   // const productId = req.params.id;
+    const product = data.products.find(x =>x.id === req.params.id);
+    if (product)
+    res.send(product);
+    else
+    res.status(404).send({msg:"Product Not FOund."})
+});
 app.get("/",(req,res)=>{
-res.send('Hello World');
+    res.send('Hello World');
     res.send(data.products);
 });
 // app.listen(5000,() => {console.log("server started at https://localhost:5000")});

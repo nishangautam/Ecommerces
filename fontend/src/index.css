@@ -28,7 +28,7 @@ button {
 }
 .header {
   grid-area: header;
-  background-color: #203040;
+  background-color: #2d6870;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -54,7 +54,7 @@ button {
 }
 .footer {
   grid-area: footer;
-  background-color: #203040;
+  background-color: #2d6870;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -223,7 +223,7 @@ a > .rating > span:last-child {
   border: 0.1rem #404040 solid;
 }
 .button.primary {
-  background-color: #f0c040;
+  background-color: skyblue;
 }
 .button.secondary {
   background-color: #f0f0f0;
